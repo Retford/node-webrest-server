@@ -6,7 +6,6 @@ keys/
 dist/
 
 postgres/
-prisma.config.ts
 
 src/data/generated
 

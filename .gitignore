@@ -6,6 +6,7 @@ keys/
 dist/
 
 postgres/
+prisma.config.ts
 
 
 prisma/migrations

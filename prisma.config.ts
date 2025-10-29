@@ -1,4 +1,3 @@
-process.loadEnvFile();
 import { defineConfig, env, PrismaConfig } from 'prisma/config';
 
 type Env = {

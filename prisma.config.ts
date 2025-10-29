@@ -1,9 +1,5 @@
 process.loadEnvFile();
-import { defineConfig, env, PrismaConfig } from 'prisma/config';
-
-type Env = {
-  POSTGRES_URL: string;
-};
+import { defineConfig, PrismaConfig } from 'prisma/config';
 
 export default defineConfig({
   schema: 'prisma/schema.prisma',
@@ -12,6 +8,6 @@ export default defineConfig({
   },
   engine: 'classic',
   datasource: {
-    url: env<Env>('POSTGRES_URL'),
+    url: process.env.POSTGRES_URL!,
   },
 } satisfies PrismaConfig);

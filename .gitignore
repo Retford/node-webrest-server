@@ -1,16 +1,13 @@
 node_modules/
 keys/
 .env
-/src/generated/prisma
 
-/src/generated/prisma
 
 dist/
 
 postgres/
 
-/generated/prisma
+src/data/generated
 
-generated
 
 prisma/migrations

@@ -1,12 +1,8 @@
+
 node_modules/
 keys/
 .env
 
-
-dist/
-
 /postgres
 
-src/data/generated
-
-prisma/migrations
+dist/

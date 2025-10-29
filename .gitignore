@@ -5,7 +5,7 @@ keys/
 
 dist/
 
-postgres/
+/postgres
 
 src/data/generated
 

@@ -8,5 +8,6 @@ dist/
 postgres/
 prisma.config.ts
 
+src/data/generated
 
 prisma/migrations

@@ -4,8 +4,8 @@
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "dist",
-    "module": "ESNext",
-    "target": "ES2022",
+    "module": "commonjs",
+    "target": "esnext",
     "lib": ["esnext"],
     "types": ["node"],
 

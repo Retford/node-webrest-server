@@ -32,19 +32,12 @@ export class Server {
     this.app.use(this.routes);
 
     //* SPA
-    this.app.get('/{*splat}', (req, res) => {
+    this.app.get('/*splat',(req, res) => {
       const indexPath = path.join(
         __dirname + `../../../${this.publicPath}/index.html`
       );
       res.sendFile(indexPath);
     });
-
-    // this.app.use((req, res) => {
-    //   const indexPath = path.join(
-    //     __dirname + `../../../${this.publicPath}/index.html`
-    //   );
-    //   res.sendFile(indexPath);
-    // });
 
     this.app.listen(this.port, () => {
       console.log(`Server running on port ${this.port}`);

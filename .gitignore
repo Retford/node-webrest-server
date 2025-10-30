@@ -8,3 +8,5 @@ keys/
 dist/
 
 src/data/generated
+coverage
+.vscode

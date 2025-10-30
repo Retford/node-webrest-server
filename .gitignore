@@ -1,7 +1,11 @@
 
 node_modules/
 keys/
+
 .env
+
+.env.test
+
 
 /postgres
 
@@ -9,4 +13,4 @@ dist/
 
 src/data/generated
 coverage/
-.vscode
+.vscodes

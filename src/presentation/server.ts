@@ -1,4 +1,5 @@
 import express, { Router } from 'express';
+import compression from 'compression';
 import path from 'path';
 
 interface Options {
@@ -23,7 +24,8 @@ export class Server {
   async start() {
     //* middlewares
     this.app.use(express.json()); // json
-    this.app.use(express.urlencoded({ extended: true })); //LINK - x-www-form-urlencoded
+    this.app.use(express.urlencoded({ extended: true })); // x-www-form-urlencoded
+    this.app.use(compression()); // para mejorar las peticiones
 
     //* public folder
     this.app.use(express.static(this.publicPath));
@@ -32,7 +34,7 @@ export class Server {
     this.app.use(this.routes);
 
     //* SPA
-    this.app.get('/*splat',(req, res) => {
+    this.app.get('/*splat', (req, res) => {
       const indexPath = path.join(
         __dirname + `../../../${this.publicPath}/index.html`
       );
